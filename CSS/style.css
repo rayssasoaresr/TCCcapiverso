@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f2;
+    color: #1f3328;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d8e8d3;
+    margin-bottom: 24px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e6f40;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f3328;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2e6f40;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.hero h1 {
+    font-size: 1.7rem;
+    color: #1b4332;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #4a5d52;
+    line-height: 1.5;
+}
+
+.card-quiz {
+    background-color: #e9f2e4;
+    padding: 28px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card-quiz h2 {
+    font-size: 1.3rem;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.card-quiz p {
+    font-size: 0.95rem;
+    color: #4a5d52;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.btn-iniciar {
+    display: block;
+    background-color: #2e6f40;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-iniciar:hover {
+    background-color: #1b4332;
+}
+
+.img-capivara {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 20px;
+    margin-top: 16px;
+}
