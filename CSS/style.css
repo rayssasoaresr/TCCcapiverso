@@ -96,9 +96,39 @@ nav a:hover {
     background-color: #1b4332;
 }
 
+.card-imagem {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+}
+
 .img-capivara {
     width: 100%;
-    max-width: 260px;
-    border-radius: 20px;
-    margin-top: 16px;
+    border-radius: 14px;
+    display: block;
+}
+
+.legenda-capivara {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2e6f40;
+    margin-top: 10px;
+}
+
+.tag-topo {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #2e6f40;
+    margin-bottom: 6px;
+}
+
+.info-rodape {
+    display: block;
+    font-size: 0.78rem;
+    color: #4a5d52;
+    margin-top: 12px;
 }

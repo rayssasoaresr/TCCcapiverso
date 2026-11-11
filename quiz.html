@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapiVerso - Questionário</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .barra-progresso-fundo {
+            width: 100%;
+            height: 8px;
+            background-color: #e9f2e4;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .barra-progresso-preenchida {
+            height: 100%;
+            width: 25%;
+            background-color: #2e6f40;
+            transition: width 0.3s ease;
+        }
+
+        .card-pergunta {
+            background-color: #ffffff;
+            padding: 24px 20px;
+            border-radius: 20px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+            text-align: left;
+        }
+
+        .numero-pergunta {
+            font-size: 0.78rem;
+            font-weight: bold;
+            color: #2e6f40;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .card-pergunta h2 {
+            font-size: 1.25rem;
+            color: #1b4332;
+            margin-bottom: 20px;
+            line-height: 1.35;
+        }
+
+        .opcoes-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .opcao-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            padding: 14px;
+            background-color: #faf6ee;
+            border: 2px solid #e5dfd3;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            color: #1f3328;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .opcao-btn:hover {
+            border-color: #2e6f40;
+            background-color: #e9f2e4;
+        }
+
+        .opcao-btn.selecionada {
+            border-color: #2e6f40;
+            background-color: #e9f2e4;
+            font-weight: bold;
+        }
+
+        .letra-opcao {
+            background-color: #ffffff;
+            color: #2e6f40;
+            font-weight: bold;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 1px solid #d8e8d3;
+        }
+
+        .botoes-navegacao {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .btn-voltar {
+            padding: 14px 20px;
+            border-radius: 30px;
+            border: 1px solid #d8e8d3;
+            background-color: #ffffff;
+            color: #4a5d52;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-proxima {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .resultado-box {
+            display: none;
+            text-align: center;
+        }
+
+        .ong-card {
+            background-color: #e9f2e4;
+            padding: 16px;
+            border-radius: 16px;
+            margin: 16px 0;
+            text-align: left;
+        }
+
+        .ong-card h3 {
+            color: #1b4332;
+            margin-bottom: 6px;
+        }
+
+        .ong-card p {
+            font-size: 0.9rem;
+            color: #4a5d52;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CapiVerso</div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="quiz.html">Questionário</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="barra-progresso-fundo">
+            <div class="barra-progresso-preenchida" id="barra-progresso"></div>
+        </div>
+
+       <section class="card-pergunta" id="area-quiz">
+            <span class="numero-pergunta">PERGUNTA 1 DE 4</span>
+            <h2>Pergunta 1</h2>
+
+            <div class="opcoes-lista">
+                <button class="opcao-btn"><span class="letra-opcao">A</span> <span>Opção A</span></button>
+                <button class="opcao-btn"><span class="letra-opcao">B</span> <span>Opção B</span></button>
+                <button class="opcao-btn"><span class="letra-opcao">C</span> <span>Opção C</span></button>
+                <button class="opcao-btn"><span class="letra-opcao">D</span> <span>Opção D</span></button>
+            </div>
+
+            <div class="botoes-navegacao">
+                <a href="index.html" class="btn-voltar" style="text-decoration: none;">← Voltar</a>
+                <a href="index.html" class="btn-iniciar btn-proxima">Próxima →</a>
+            </div>
+        </section>
+
+        <section class="card-pergunta resultado-box" id="area-resultado">
+            <span class="tag-topo">★ SEU CAMINHO IDEAL</span>
+            <h2>Encontramos projetos perfeitos para você!</h2>
+            <p style="font-size: 0.9rem; color: #4a5d52; margin-top: 8px;">Com base nas suas respostas, esta ONG combina com o seu perfil:</p>
+
+            <div id="lista-ongs-recomendadas"></div>
+
+            <a href="quiz.html" class="btn-iniciar" style="justify-content: center; margin-top: 16px;">Refazer questionário</a>
+        </section>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

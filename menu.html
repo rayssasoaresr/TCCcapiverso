@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapiVerso - Menu de Navegação</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .topo-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .btn-fechar {
+            background-color: #ffffff;
+            border: 1px solid #e5dfd3;
+            color: #1f3328;
+            text-decoration: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .banner-boas-vindas {
+            background-color: #e9f2e4;
+            padding: 16px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .banner-boas-vindas img {
+            width: 64px;
+            height: 64px;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+
+        .etiqueta-menu {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #2e6f40;
+            font-size: 0.68rem;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 10px;
+            margin-bottom: 4px;
+        }
+
+        .banner-boas-vindas h2 {
+            font-size: 1.1rem;
+            color: #1b4332;
+            margin-bottom: 2px;
+        }
+
+        .banner-boas-vindas p {
+            font-size: 0.82rem;
+            color: #4a5d52;
+        }
+
+        .lista-links-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .item-menu {
+            background-color: #ffffff;
+            padding: 16px;
+            border-radius: 18px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+        }
+
+        .item-esquerda {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-align: left;
+        }
+
+        .icone-box {
+            width: 40px;
+            height: 40px;
+            background-color: #e9f2e4;
+            color: #2e6f40;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .item-texto strong {
+            display: block;
+            color: #1b4332;
+            font-size: 0.98rem;
+        }
+
+        .item-texto span {
+            font-size: 0.8rem;
+            color: #4a5d52;
+        }
+
+        .seta-direita {
+            color: #4a5d52;
+            font-weight: bold;
+        }
+
+        .rodape-menu {
+            background-color: #efe9dc;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .rodape-menu p {
+            font-size: 0.82rem;
+            color: #4a5d52;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .versao-texto {
+            font-size: 0.72rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <header class="topo-menu">
+        <div class="logo">CapiVerso</div>
+        <a href="index.html" class="btn-fechar" title="Voltar para o início">✕</a>
+    </header>
+
+    <main>
+        <section class="banner-boas-vindas">
+            <img src="IMG/capivara.png" alt="Mascote CapiVerso">
+            <div>
+                <span class="etiqueta-menu">MENU INTERATIVO</span>
+                <h2>Olá! Que bom ter você aqui! ✨</h2>
+                <p>Para onde quer navegar hoje?</p>
+            </div>
+        </section>
+
+        <section class="lista-links-menu">
+            <a href="index.html" class="item-menu">
+                <div class="item-esquerda">
+                    <div class="icone-box">🏠</div>
+                    <div class="item-texto">
+                        <strong>Início</strong>
+                        <span>Página principal e novidades</span>
+                    </div>
+                </div>
+                <span class="seta-direita">›</span>
+            </a>
+
+            <a href="cadastro.html" class="item-menu">
+                <div class="item-esquerda">
+                    <div class="icone-box">👤</div>
+                    <div class="item-texto">
+                        <strong>Cadastre-se</strong>
+                        <span>Crie sua conta e participe</span>
+                    </div>
+                </div>
+                <span class="seta-direita">›</span>
+            </a>
+
+            <a href="quiz.html" class="item-menu">
+                <div class="item-esquerda">
+                    <div class="icone-box">💚</div>
+                    <div class="item-texto">
+                        <strong>Sobre o CapiVerso & Quiz</strong>
+                        <span>Nosso propósito e questionário</span>
+                    </div>
+                </div>
+                <span class="seta-direita">›</span>
+            </a>
+        </section>
+
+        <footer class="rodape-menu">
+            <p>"A educação transforma caminhos. Descubra oportunidades feitas sob medida para você e dê o próximo passo com o CapiVerso."</p>
+            <span class="versao-texto">Versão 1.0 • Feito com carinho 💚</span>
+        </footer>
+    </main>
+</body>
+</html>
