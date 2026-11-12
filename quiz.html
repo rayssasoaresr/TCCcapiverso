@@ -158,23 +158,20 @@
             <div class="barra-progresso-preenchida" id="barra-progresso"></div>
         </div>
 
+        <!-- perguntas e opções -->
        <section class="card-pergunta" id="area-quiz">
-            <span class="numero-pergunta">PERGUNTA 1 DE 4</span>
-            <h2>Pergunta 1</h2>
+            <span class="numero-pergunta" id="contador-pergunta">PERGUNTA 1 DE 4</span>
+            <h2 id="texto-pergunta">Carregando pergunta...</h2>
 
-            <div class="opcoes-lista">
-                <button class="opcao-btn"><span class="letra-opcao">A</span> <span>Opção A</span></button>
-                <button class="opcao-btn"><span class="letra-opcao">B</span> <span>Opção B</span></button>
-                <button class="opcao-btn"><span class="letra-opcao">C</span> <span>Opção C</span></button>
-                <button class="opcao-btn"><span class="letra-opcao">D</span> <span>Opção D</span></button>
-            </div>
+            <div class="opcoes-lista" id="lista-opcoes"></div>
 
             <div class="botoes-navegacao">
-                <a href="index.html" class="btn-voltar" style="text-decoration: none;">← Voltar</a>
-                <a href="index.html" class="btn-iniciar btn-proxima">Próxima →</a>
+                <button class="btn-voltar" id="btn-voltar" onclick="perguntaAnterior()">← Voltar</button>
+                <button class="btn-iniciar btn-proxima" id="btn-proxima" onclick="proximaPergunta()">Próxima →</button>
             </div>
         </section>
 
+        <!-- tela final com a ONG recomendada-->
         <section class="card-pergunta resultado-box" id="area-resultado">
             <span class="tag-topo">★ SEU CAMINHO IDEAL</span>
             <h2>Encontramos projetos perfeitos para você!</h2>

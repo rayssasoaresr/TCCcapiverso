@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">CapiVerso</div>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="quiz.html">Questionário</a>
-            <a href="cadastro.html">Cadastre-se</a>
-            <a href="menu.html">Menu</a>
-        </nav>
+
+    <!-- menu de navegação topo -->
+    <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <a href="index.html" class="logo" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+            <span style="background-color: #e9f2e4; padding: 6px; border-radius: 50%; font-size: 1.1rem;">🦫</span>
+            <span>CapiVerso</span>
+        </a>
+        <a href="menu.html" title="Abrir menu" style="background-color: #e9f2e4; color: #1b4332; text-decoration: none; width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: bold;">
+            ☰
+        </a>
     </header>
 
     <main>
@@ -22,21 +24,29 @@
             <h1>Seu futuro merece novas possibilidades.</h1>
             <p>Conecte-se a ONGs e projetos sociais que abrem caminhos pela educação.</p>
 
-            <div class="card-imagem">
-                <img src="IMG/capivara.png" alt="Capivara lendo com amigos" class="img-capivara">
-                <span class="legenda-capivara">💚 Juntos, a gente vai mais longe.</span>
+            <section class="card-imagem" style="border-radius: 24px; padding: 14px;">
+            <img src="IMG/capivara.png" alt="Mascote CapiVerso lendo com amigos" style="width: 100%; display: block; border-radius: 18px;">
+            <div style="margin-top: 12px;">
+                <span style="background-color: #e9f2e4; color: #2e6f40; font-size: 0.82rem; font-weight: bold; padding: 6px 14px; border-radius: 20px; display: inline-block;">
+                    💚 Juntos, iremos mais longe.
+                </span>
             </div>
         </section>
 
-        <section class="card-quiz">
+        <!-- cartao que leva pro questionário -->
+        <section class="card-cta" style="border-radius: 24px; text-align: left; padding: 24px 20px;">
             <span class="tag-topo">★ DO SEU JEITO, NO SEU TEMPO</span>
-            <h2>Qual caminho combina com você?</h2>
-            <p>Conte sobre seus interesses e descubra oportunidades educacionais para você.</p>
-            <a href="quiz.html" class="btn-iniciar">
+            <h2 style="margin-top: 8px;">Qual caminho combina com você?</h2>
+            <p style="margin-bottom: 20px;">Conte sobre seus interesses e descubra oportunidades educacionais para você.</p>
+
+            <a href="quiz.html" class="btn-iniciar" style="width: 100%; justify-content: space-between; padding: 14px 20px; border-radius: 30px; box-sizing: border-box;">
                 <span>Iniciar questionário</span>
-                <span>→</span>
+                <span style="background-color: rgba(255,255,255,0.2); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">→</span>
             </a>
-            <span class="info-rodape">🕒 Só 3 min • Gratuito • Sem respostas erradas</span>
+
+            <p style="text-align: center; font-size: 0.78rem; color: #4a5d52; margin-top: 14px; margin-bottom: 0;">
+                🕒 Só 3 min • Gratuito • Sem respostas erradas
+            </p>
         </section>
     </main>
 </body>
